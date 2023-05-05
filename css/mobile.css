@@ -1,0 +1,39 @@
+/* CSS cho Mobile */
+
+@media screen and (max-width: 767px) {
+  .name {
+    display: none;
+  }
+  #nav-bar {
+    border: none;
+  }
+  #nav-bar .container {
+    flex-direction: column;
+  }
+  #nav-bar .container a {
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+  }
+  .cert {
+    grid-template-columns: 1fr;
+    border-bottom: 0.5px solid darkorange;
+  }
+
+  /* #certificate .vertical-line #certificate .horizone-line {
+    overflow: hidden;
+    position: relative;
+  } */
+
+  #about {
+    flex-direction: column;
+  }
+
+  #pets-project {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-content {
+    grid-template-columns: 1fr;
+  }
+}

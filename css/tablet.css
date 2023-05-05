@@ -1,0 +1,21 @@
+/* Laptop first để chỉ tuần tự responsive giao diện từ màn hình lớn đến nhỏ : dùng max-width */
+
+/* CSS cho tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .name {
+    display: none;
+  }
+  #nav-bar a:nth-child(2) {
+    border-right: none;
+  }
+  .cert {
+    grid-template-columns: 1fr;
+  }
+
+  #pets-project {
+    grid-template-columns: 1fr;
+  }
+  .scope-content {
+    grid-template-columns: 1fr;
+  }
+}

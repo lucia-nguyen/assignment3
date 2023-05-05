@@ -1,0 +1,590 @@
+/* SET general cho CSS */
+/* font chữ cho cho trang */
+/* declair box-sizing cho trang */
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+/* email error notice */
+#error-email-format {
+  color: rgb(250, 119, 12);
+  font-weight: 700;
+}
+
+/* tạo KHOẢNG CÁCH GIỮA CÁC PHẦN */
+.section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* xây dựng các thanh bar */
+.bar {
+  width: 50px;
+  height: 3px;
+  background-color: grey;
+  display: inline-block;
+}
+
+.fill {
+  background-color: rgb(12, 159, 250);
+}
+
+/* kích thước và in đậm cho chữ của phần ngôn ngữ và kỹ năng */
+.title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* style cho phần BANNER */
+
+/* định vị position thẻ cha */
+/* vh size 100% chiều cao cho banner */
+.banner {
+  position: relative;
+  height: 300px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* định vị thẻ con */
+/* style cho chữ (màu chữ căn giữa..)*/
+.banner-text {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+/* style cho phần NAVBAR  */
+#nav-bar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
+}
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: unset;
+}
+#nav-bar .container a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 10px;
+  border-left: 1px solid #d0d0d0;
+}
+#nav-bar a:nth-child(2) {
+  border-right: 1px solid #d0d0d0;
+}
+#nav-bar a:nth-child(5) {
+  border-right: 1px solid #d0d0d0;
+}
+#nav-bar .container i {
+  color: #199cdb;
+}
+.name {
+  position: relative;
+  min-width: 200px;
+}
+.avatar {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+}
+.avatar img {
+  border-radius: 50%;
+  border: 10px solid white;
+}
+/* style phần THÔNG TIN CÁ NHÂN */
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* ẩn thông tin cá nhân chỉ khi nhấn button submit thì sẽ hiển thị */
+#personal-info .mt-40-info {
+  display: none;
+}
+
+/* dùng grid layout để chia màn hình thành 2 cột bằng nhau*/
+.personal-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 25px;
+  height: 280px;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* khoảng cách giữa các dòng và bỏ dấu phía trước cho ul */
+ul {
+  list-style: none;
+  padding: 0.6px;
+  line-height: 1.5;
+}
+
+ol {
+  list-style: none;
+  padding: 0.6px;
+  line-height: 1.5;
+}
+
+ol li {
+  list-style: none;
+  padding: 1px;
+}
+/* màu icons */
+.icons {
+  color: rgb(12, 159, 250);
+}
+
+/* Ẩn thông tin phần nghề nghiệp, học vấn, hoạt động, sở thích, ngôn ngữ, kỹ năng */
+.d-none {
+  display: none;
+}
+
+/* Ẩn view more*/
+.view-more {
+  display: none;
+}
+
+/* style phần THÔNG TIN NGHỀ NGHIỆP */
+/* dùng grid chia chia cột và dòng  */
+/* tạo timeline */
+/* đặt position : relative cho thẻ cha ol */
+.time-vertical ol li {
+  position: relative;
+}
+/* tạo mốc thời gian cho (hình tròn) cho timeline */
+.time-vertical ol li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -24px;
+  width: 10px;
+  height: 10px;
+  background: #74dbfb;
+  border-radius: 50%;
+  /* box-shadow: 0 0 0 3px rgba(122, 147, 248, 0.961); */
+}
+
+.timeline-event {
+  list-style: none;
+}
+
+/* STYLE FOR EXPERIENCE */
+/* thêm grid riêng cho phần kinh nghiệm */
+#experiences {
+  display: grid;
+}
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  padding: 20px;
+}
+
+.exp-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+
+/* style cho icon */
+.ic-toolbox {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE FOR EDUCATION */
+/* thêm grid riêng cho phần học vấn */
+#educations {
+  display: grid;
+}
+
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  /* padding: 20px; */
+}
+
+.edu-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+/* style cho icon */
+.ic-pencil {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE FOR ACTIVITY */
+/* thêm grid riêng cho phần hoạt động*/
+#activities {
+  display: grid;
+}
+
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  /* padding: 20px; */
+}
+
+.act-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+
+/* style cho icon */
+.ic-toolbox {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE FOR HOBBY*/
+/* thêm grid riêng cho phần sở thích */
+#hobbies {
+  display: grid;
+}
+
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  /* padding: 20px; */
+}
+
+.hobby-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+
+/* style cho icon */
+.ic-telescope {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE CHO các icon của từng sở thích */
+.ic-megaphone {
+  font-size: 20px;
+}
+
+.ic-strategy {
+  font-size: 20px;
+}
+
+.ic-basket {
+  font-size: 20px;
+}
+
+.ic-hotairballoon {
+  font-size: 20px;
+}
+
+/* dùng Flex để định vị cho các sở thích */
+
+.hobby {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.hobby-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* đưa các icon của các sở thích vào trong border tròn */
+.hobby1 {
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 13px;
+  padding-left: 10px;
+  border: 2px solid rgb(12, 159, 250);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.hobby2 {
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 2px solid rgb(12, 159, 250);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.hobby3 {
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 12px;
+  border: 2px solid rgb(12, 159, 250);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.hobby4 {
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 2px solid rgb(12, 159, 250);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.hobby-title {
+  margin-right: 25px;
+}
+/* STYLE FOR LANGUAGE*/
+/* thêm grid riêng cho phần ngôn ngữ */
+#languages {
+  display: grid;
+}
+
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  /* padding: 20px; */
+}
+
+.lang-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+
+/* style cho icon */
+.ic-mic {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE FOR SKILL*/
+/* thêm grid riêng cho phần kỹ năng */
+#skills {
+  display: grid;
+}
+
+/* chia cột và dòng theo kèm tỷ lệ và có border */
+.section-content {
+  grid-column: 1/3;
+  display: inline-block;
+  /* padding: 20px; */
+}
+
+.skill-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  padding: 15px;
+
+  border: 0.5px solid darkorange;
+}
+
+/* style cho icon */
+.ic-tools-2 {
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* STYLE FOR CERTIFICATE*/
+#certificate {
+  margin-top: 20px;
+}
+
+/* dùng grid chia 2 cột và cột và phần còn dư sẽ tự động xuống dòng dưới*/
+.cert {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/* flex định vị ví trí cho hình ảnh và text */
+/* .cert {
+  display: flex;
+  gap: 15px;
+}
+
+.cert-img {
+  flex: 0.2;
+}
+
+.cert-text {
+  flex: 0.8;
+} */
+
+/* tạo đường line đứng */
+/* (thuộc tính content bắt buộc phải có mặc dù không cần để giá trị bên trong)  */
+
+#certificate {
+  position: relative;
+}
+
+#certificate .vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 110px;
+  right: 50%;
+  width: 2px;
+  height: 20%;
+  background: #d6c08d;
+}
+
+/* tạo đường line ngang */
+
+#certificate .horizone-line::before {
+  content: "";
+  position: absolute;
+  top: 285px;
+  left: 17%;
+  width: 900px;
+  height: 2px;
+  transform: translateY(-50%);
+  background: #d6c08d;
+}
+
+/* STYLE FOR PROJECT*/
+
+.project-title {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  gap: 5px;
+  padding: 5px;
+}
+
+.project-details {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 20px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.text1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 90px 90px 90px; */
+  gap: 15px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+/* table border */
+table {
+  border-collapse: collapse;
+}
+
+table tr td {
+  border: thin solid;
+}
+
+/* STYLE FOR FOOTER*/
+#footer {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  margin: 0;
+}
+
+/* đưa các items thành hàng ngang */
+.footer-icons {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* màu icon của phần footer */
+.icon-facebook-circled {
+  color: rgb(12, 159, 250);
+}
+
+.icon-linkedin-circled {
+  color: rgb(12, 159, 250);
+}
+
+.icon-github-circled {
+  color: rgb(12, 159, 250);
+}
+
+/* phần nâng cao thay đổi text qua thành avatar cho navbar */
+.nav-avatar {
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+  border: 5px solid gainsboro;
+  position: absolute;
+  transform: scale (5);
+  top: -35px;
+  left: 47%;
+}

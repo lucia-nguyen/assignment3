@@ -1,0 +1,101 @@
+/* Css cho trang  */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h5 {
+  font-weight: bold;
+  color: blue;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+#pets-project {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  /* padding: 15px; */
+}
+
+/* CSS cho phần Goals */
+.goals {
+  display: grid;
+  border: 5px solid blue;
+  padding: 15px;
+  height: 700px;
+}
+
+.goal-achieve {
+  border-bottom: 1px solid lightskyblue;
+}
+
+/* CSS cho phần Scopes */
+
+.scopes {
+  border: 5px solid blue;
+  padding: 15px;
+  height: 250px;
+}
+
+.scope-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 50px;
+}
+
+/* CSS cho phần Team */
+.team {
+  display: grid;
+  border: 5px solid blue;
+  padding: 15px;
+  height: 700px;
+}
+
+/* CSS cho phần Primary */
+
+.primary {
+  display: grid;
+  border: 5px solid blue;
+  padding: 15px;
+  height: 250px;
+}
+
+/* CSS cho phần Timeline */
+.timeline {
+  position: relative;
+  display: grid;
+  border: 5px solid blue;
+  padding: 15px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+}
+.timeline .timeline-number {
+  content: "";
+  position: absolute;
+  transform: translateY (-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(187, 107, 187);
+  border: 2px solid grey;
+  color: white;
+  font-size: 15px;
+}
+
+.timeline-date p {
+  text-align: center;
+}
+
+.timeline-number {
+  padding-left: 5px;
+}
+
+.content {
+  border-bottom: 1.5px dotted lightskyblue;
+  padding-left: 50px;
+}
